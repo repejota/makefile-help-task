@@ -1,6 +1,32 @@
 # makefile-help-task
 
-A generic Makefile help task.
+A generic Makefile help task. 
+
+It provides self-documenting Makefile task that shows tasks available with a
+description for each one. Like a `--help` flag on CLI tools.
+
+It also sets this new `help` task as a default one.
+
+Example:
+
+```
+$ cat Makefile
+include Makefile.help.mk
+
+install:    ## Install app
+    ./configure
+    make
+    make install
+
+$ make
+install:    Install app
+help:       Show this help ( default ) 
+```
+
+## How to use
+
+Just include the `Makefile.help.mk` file in your `Makefile` like in the example
+above.
 
 ## Requirements
 

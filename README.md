@@ -26,7 +26,7 @@ install:  Install app
 help:  Show this help ( default )
 ```
 
-## How to use
+## How to use
 
 Just include the `Makefile.help.mk` file in your `Makefile` like in the example
 above.

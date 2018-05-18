@@ -5,6 +5,18 @@ jobs:
       # specify the version
       - image: circleci/python:latest
     steps:
+      # dependencies
+      - run: 
+          name: Install bats testing framework
+          command: |
+              git clone https://github.com/sstephenson/bats.git
+              cd bats
+              sudo ./install.sh /usr/local
+              rm -rf ~/project/*
+      # checkout project sources
       - checkout
-      # specify any bash command here prefixed with `run: `
-      - run: make test
+      # tests suite execution
+      - run: 
+          name: Execute tests suite
+          command: |
+              make test

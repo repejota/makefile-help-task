@@ -5,3 +5,11 @@
     [ "$status" -eq 0 ]
 }
 
+@test "simple test output" {
+    run make --no-print-directory -f tests/Makefile.simple
+    echo -e "Output   : ${output}"
+    expected="install:   Install app"
+    [ "${lines[0]}" == "${expected}" ]
+    expected="help:   Show this help ( default )"
+    [ "${lines[1]}" == "${expected}" ]
+}

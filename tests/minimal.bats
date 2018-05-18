@@ -10,5 +10,5 @@
     run make -f tests/Makefile.minimal
     echo -e "$expected"
     echo -e "$output"
-    [ "$output" = "$expected" ]
+    [ "${lines[0]}" = "$expected" ]
 }

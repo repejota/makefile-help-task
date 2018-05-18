@@ -12,7 +12,7 @@ jobs:
               git clone https://github.com/sstephenson/bats.git
               cd bats
               sudo ./install.sh /usr/local
-              rm -rf bats
+              rm -rf ~/project/*
       # checkout project sources
       - checkout
       # tests suite execution

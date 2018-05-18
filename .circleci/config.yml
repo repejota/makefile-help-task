@@ -5,6 +5,12 @@ jobs:
       # specify the version
       - image: circleci/python:latest
     steps:
+      # Install dependencies
+      - run: git clone https://github.com/sstephenson/bats.git
+      - run: cd bats
+      - run: ./install.sh /usr/local
+      - run: rm -rf bats
+      # checkout
       - checkout
       # specify any bash command here prefixed with `run: `
       - run: make test

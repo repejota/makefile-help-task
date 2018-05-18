@@ -1,6 +1,12 @@
 # makefile-help-task
 
-A generic Makefile help task 
+A generic Makefile help task.
+
+## Requirements
+
+* bash (https://www.gnu.org/software/bash)
+* GNU Make (https://www.gnu.org/software/make)
+* bats (https://github.com/sstephenson/bats)
 
 ## License
 

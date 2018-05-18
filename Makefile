@@ -1,5 +1,4 @@
 include Makefile.help.mk
 
-test:	## Execute tests
+test: 	## Execute tests
 	@./test.sh
-

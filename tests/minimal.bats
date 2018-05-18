@@ -6,7 +6,7 @@
 }
 
 @test "minimal test output" {
-    expected="help:  Show this help ( default )"
+    expected="help:   Show this help ( default )"
     run make --no-print-directory -f tests/Makefile.minimal
     echo -e "Expected : ${expected}"
     echo -e "Output   : ${output}"

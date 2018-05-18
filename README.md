@@ -19,7 +19,7 @@ install:  ## Install app
     make install
 
 $ make
-install:   Install app
+install:  Install app
 help:  Show this help ( default )
 ```
 

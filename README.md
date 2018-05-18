@@ -2,7 +2,7 @@
 
 A generic Makefile help task.
 
-## Requirements
+## Requirements
 
 * bash (https://www.gnu.org/software/bash)
 * GNU Make (https://www.gnu.org/software/make)

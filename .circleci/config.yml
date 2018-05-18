@@ -6,7 +6,7 @@ jobs:
       - image: circleci/python:latest
     steps:
       # dependencies
-      - run: git clone https://github.com/sstephenson/bats.git && cd bats && ./install /usr/local
+      - run: git clone https://github.com/sstephenson/bats.git && cd bats && ./install.sh /usr/local
       # checkout
       - checkout
       # specify any bash command here prefixed with `run: `

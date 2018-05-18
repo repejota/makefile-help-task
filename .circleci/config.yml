@@ -7,9 +7,9 @@ jobs:
     steps:
       # Install dependencies
       - run: git clone https://github.com/sstephenson/bats.git
-      - run: cd bats
+      - run: cd project/bats
       - run: ./install.sh /usr/local
-      - run: rm -rf bats
+      - run: cd
       # checkout
       - checkout
       # specify any bash command here prefixed with `run: `

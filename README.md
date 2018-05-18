@@ -13,14 +13,14 @@ Example:
 $ cat Makefile
 include Makefile.help.mk
 
-install:    ## Install app
+install:  ## Install app
     ./configure
     make
     make install
 
 $ make
-install:    Install app
-help:       Show this help ( default ) 
+install:   Install app
+help:  Show this help ( default )
 ```
 
 ## How to use

@@ -5,3 +5,8 @@
     [ "$status" -eq 0 ]
 }
 
+@test "minimal test output" {
+    expected="help:  Show this help ( default )"
+    run make -f tests/Makefile.minimal
+    [ "$output" = "$expected" ]
+}

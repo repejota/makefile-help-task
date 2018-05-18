@@ -6,9 +6,7 @@ set -e
 EXPECTED="help:*"
 OUTPUT="$(make -f tests/Makefile.simple)"
 
-if [[ ${OUTPUT} == ${EXPECTED} ]]; then
-    echo "PASS simple"
-else
+if [[ ${OUTPUT} != ${EXPECTED} ]]; then
     echo "FAIL simple: expected: '${EXPECTED}' but got: '${OUTPUT}'"
 fi
 

@@ -1,5 +1,8 @@
 # makefile-help-task
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![CircleCI](https://circleci.com/gh/repejota/makefile-help-task.svg?style=svg)](https://circleci.com/gh/repejota/makefile-help-task)
+
 A generic Makefile help task. 
 
 It provides self-documenting Makefile task that shows tasks available with a

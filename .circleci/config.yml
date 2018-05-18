@@ -4,13 +4,9 @@ jobs:
     docker:
       # specify the version
       - image: circleci/python:latest
-    dependencies:
-      cache_directories:
-        - bats
-      pre:
-        - git clone https://github.com/sstephenson/bats.git
-        - cd bats && ./install.sh /usr/local
     steps:
+      # dependencies
+      - run: git clone https://github.com/sstephenson/bats.git && cd bats && ./install /usr/local
       # checkout
       - checkout
       # specify any bash command here prefixed with `run: `

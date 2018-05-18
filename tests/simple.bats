@@ -1,7 +1,7 @@
 #!/usr/bin/env bats
 
 @test "simple test status is 0" {
-    run make -f tests/Makefile.simple
+    run make --no-print-directory -f tests/Makefile.simple
     [ "$status" -eq 0 ]
 }
 

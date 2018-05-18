@@ -8,7 +8,7 @@
 @test "minimal test output" {
     expected="help:  Show this help ( default )"
     run make -f tests/Makefile.minimal
-    echo -e "${expected}"
-    echo -e "${lines[1]}"
-    [ "${lines[1]}" = "${expected}" ]
+    echo -e "Expected : ${expected}"
+    echo -e "Output   : ${output}"
+    [ "${output}" = "${expected}" ]
 }

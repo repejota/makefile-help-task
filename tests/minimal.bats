@@ -9,6 +9,6 @@
     expected="help:  Show this help ( default )"
     run make -f tests/Makefile.minimal
     echo -e "${expected}"
-    echo -e "${lines[0]}"
-    [ "${lines[0]}" = "${expected}" ]
+    echo -e "${lines[1]}"
+    [ "${lines[1]}" = "${expected}" ]
 }
